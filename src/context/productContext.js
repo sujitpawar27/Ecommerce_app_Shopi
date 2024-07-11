@@ -5,7 +5,7 @@ const ProductContext = createContext();
 export const ProductProvider = ({ children }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [productToShow, setProductToShow] = useState(null);
-  //   const [products, setProducts] = useState([]);
+  const [isCheckoutSideMenuOpen, setCheckOutMenuOpen] = useState(false);
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
   const [totalPriceOfProducts, setTotalPriceOfProducts] = useState(0);
@@ -168,7 +168,9 @@ export const ProductProvider = ({ children }) => {
         setFilteredItems,
         searchByCategory,
         setSearchByCategory,
-        cleanTitlebarState,
+              cleanTitlebarState,
+              isCheckoutSideMenuOpen,
+              setCheckOutMenuOpen
       }}
     >
       {children}

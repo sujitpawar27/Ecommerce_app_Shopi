@@ -44,7 +44,6 @@ const ProductCard = ({ product }) => {
           className="card-image"
           alt={product.title}
         />
-        {/* <PlusIcon id="addicon" onClick={addProductToCart}></PlusIcon> */}
         {renderIcon(product.id)}
       </figure>
       <div className="card-body">
