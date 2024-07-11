@@ -18,14 +18,13 @@ const CheckoutSideMenu = () => {
   const nodeRef = useRef(null);
 
   const handleDelete = (id) => {
-    const filteredProducts = cart.filter((product) => product.id != id);
+    const filteredProducts = cart.filter((product) => product.id !== id);
     setCart(filteredProducts);
     console.log("handledelete");
   };
 
   const addProductsTomyorder = (event) => {
     console.log("clicked");
-    //  event.stopPropagation();
     handleCheckout();
   };
 

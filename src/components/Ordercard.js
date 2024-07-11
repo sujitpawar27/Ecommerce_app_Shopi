@@ -8,7 +8,7 @@ const Ordercard = (props) => {
   const { id, title, imgUrl, price, countOfProducts, handleDelete } = props;
 
   const [productCount, setProductCount] = useState(
-    countOfProducts != undefined ? countOfProducts : 1
+    countOfProducts !== undefined ? countOfProducts : 1
   );
   const { cart, updateTotalPriceOfProducts } = useProductContext();
 

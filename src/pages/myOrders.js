@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useProductContext } from "../context/productContext";
 import { Link } from "react-router-dom";
 import { EmptyOrdersIcon } from "./EmptyOrdersIcon";
-
 import "../Styles/myOrders.css";
 import Orders from "../components/Orders";
 
