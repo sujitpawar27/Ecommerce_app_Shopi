@@ -1,0 +1,17 @@
+
+.empty-orders-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .icon-figure {
+    width: 20px;
+    height: 20px;
+    margin-top: 205px;
+  }
+  
+  .message {
+    font-weight: 600;
+  }

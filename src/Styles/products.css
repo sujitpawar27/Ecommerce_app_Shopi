@@ -1,0 +1,127 @@
+
+.products {
+  background-color: white;
+  cursor: pointer;
+  width: 14rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  transition: transform 75ms ease;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom:50rem ;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+      gap: 9rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      gap: 9rem;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+ 
+  div.card{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 15rem; 
+    height: 15rem; 
+    transition: transform 75ms ;
+    
+  }
+
+  .card:active {
+    transform: scale(1.1);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+
+  div.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+.card-title{
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+  
+.card-text{
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.figure{
+    position: relative;
+    width: 100%;
+    height: 100%;     
+}
+
+#image-info{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.6); 
+        border-radius: 0.5rem; 
+        color: black;
+        font-size: 0.875rem; 
+        margin: 0.25rem; 
+        padding-left: 0.5rem; 
+        padding-right: 0.5rem; 
+        z-index: 1;
+}
+
+.addicon{
+    position: absolute;
+    margin: 0.5rem; 
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.checkicon{
+    color: white;
+    position: absolute;
+  margin: 0.5rem;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: black ;
+}

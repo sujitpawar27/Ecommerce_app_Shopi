@@ -1,0 +1,92 @@
+
+.order-card {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    border-bottom: 1px solid;
+    border-bottom-color:rgb(107, 107, 107); 
+}
+
+.order-card-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 284px;
+}
+
+.image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8px;
+    overflow: hidden;;
+}
+
+.order-card-details {
+    display: flex;
+    flex-direction: column;
+        align-items: flex-start;
+}
+
+.order-card-title {
+    line-height: 1.1;
+    width: 200px;
+    height: 29px;
+    font-size:  0.875rem;
+    font-weight: 300;
+    margin: 0; 
+  margin-bottom: 0rem; 
+  padding: 0;
+}
+
+
+.order-card-price {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.order-card-quantity {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.order-card-button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+   width: 24px;
+   height: 24px;
+    cursor: pointer;
+}
+
+.order-card-button.minus {
+    border-radius: .5rem;
+    background-color: #ffcccc;
+}
+
+.order-card-button.plus {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: .5rem;
+    background-color: #ccffcc;
+}
+
+.order-card-count {
+    background-color: #e0e0e0;
+    width: 24px;
+   height: 24px;
+   padding-left: 6px;
+    border-radius: .375rem;
+}
+
+.order-card-delete {
+    width: 25px;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: rgb(99, 99, 99);
+}
+
